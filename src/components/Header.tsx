@@ -100,10 +100,17 @@ export function Header() {
         </div>
       </header>
 
-      {/* Mobile: só um botão fixo no canto, com fundo sempre sólido — não
-          depende do scroll nem da foto de fundo ter carregado para ter
-          contraste (era o que fazia o header "sumir" antes de a imagem
-          do hero aparecer). */}
+      {/* Mobile: logo fixa no canto esquerdo + botão de menu no canto
+          direito, ambos com fundo sempre sólido — não dependem do scroll
+          nem da foto de fundo ter carregado para ter contraste (era o que
+          fazia o header "sumir" antes de a imagem do hero aparecer). */}
+      <a
+        href="#topo"
+        className="fixed left-4 top-4 z-50 rounded-full bg-cafe px-4 py-2.5 font-heading text-base italic text-creme shadow-md md:hidden"
+      >
+        doce café.
+      </a>
+
       <button
         ref={toggleRef}
         type="button"
